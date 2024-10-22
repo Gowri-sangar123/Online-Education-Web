@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Education</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- swiper cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("QuSWv29ZvgxV9UUwE");
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="#home" class="logo">Education</a>
+
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#courses">courses</a>
+          <a href="#teachers">teachers</a>
+          <a href="#reviews">reviews</a>
+          <a href="#contact">contact</a>
+        </nav>
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="icon-cart" id="cart-icon">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
+            />
+          </svg>
+          <span class="cart-icon-count">0</span>
+        </div>
+        <div class="cart">
+          <div class="cart-title">Cart Items</div>
+          <div class="cart-content">
+         
+            <!-- <div class="cart-box">
+              <img src="images/Course-1.png.jpg" alt="" class="cart-img">
+              <div class="detail-box">
+                <div class="cart-edu-title">Web Development</div>
+                <div class="price-box">
+                  <div class="cart-price">$200</div>
+                  <div class="cart-amt">$200</div>
+                </div>
+                <input type="number" value="1" class="cart-quantity" >
+              </div>
+         <div class="cart-remove">
+          <i class="fa-solid fa-trash" ></i>
+         </div>
+             
+            </div>
+      
+            <div class="cart-box">
+              <img src="images/Course-2.png.jpg" alt="" class="cart-img">
+              <div class="detail-box">
+                <div class="cart-edu-title">Digital marketing</div>
+                <div class="price-box">
+                  <div class="cart-price">$300</div>
+                  <div class="cart-amt">$300</div>
+                </div>
+                <input type="number" value="1" class="cart-quantity" >
+              </div>
+          <div class="cart-remove">
+            <i class="fa-solid fa-trash" ></i>
+          </div>
+             
+            </div>
+
+             
+               <div class="cart-box">
+                <img src="images/Course-3.png.jpg" alt="" class="cart-img">
+                <div class="detail-box">
+                  <div class="cart-edu-title">Digital marketing</div>
+                  <div class="price-box">
+                    <div class="cart-price">$300</div>
+                    <div class="cart-amt">$300</div>
+                  </div>
+                  <input type="number" value="1" class="cart-quantity" >
+                </div>
+            <div class="cart-remove">
+              <i class="fa-solid fa-trash" ></i>
+            </div>
+               
+              </div>
+
+
+             
+            <div class="cart-box">
+              <img src="images/Course-4.png.jpg" alt="" class="cart-img">
+              <div class="detail-box">
+                <div class="cart-edu-title">Digital marketing</div>
+                <div class="price-box">
+                  <div class="cart-price">$300</div>
+                  <div class="cart-amt">$300</div>
+                </div>
+                <input type="number" value="1" class="cart-quantity" >
+              </div>
+          <div class="cart-remove">
+            <i class="fa-solid fa-trash" ></i>
+          </div>
+             
+            </div>
+
+            
+
+           
+               <div class="cart-box">
+                <img src="images/Course-5.png.jpg" alt="" class="cart-img">
+                <div class="detail-box">
+                  <div class="cart-edu-title">Digital marketing</div>
+                  <div class="price-box">
+                    <div class="cart-price">$300</div>
+                    <div class="cart-amt">$300</div>
+                  </div>
+                  <input type="number" value="1" class="cart-quantity" >
+                </div>
+            <div class="cart-remove">
+              <i class="fa-solid fa-trash" ></i>
+            </div>
+               
+              </div>
+
+
+
+              
+            <div class="cart-box">
+              <img src="images/Course-6.png.jpg" alt="" class="cart-img">
+              <div class="detail-box">
+                <div class="cart-edu-title">Digital marketing</div>
+                <div class="price-box">
+                  <div class="cart-price">$300</div>
+                  <div class="cart-amt">$300</div>
+                </div>
+                <input type="number" value="1" class="cart-quantity" >
+              </div>
+          <div class="cart-remove">
+            <i class="fa-solid fa-trash" ></i>
+          </div>
+             
+            </div>
+          </div> -->
+        
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs.0</div>
+            </div>
+            <button class="btn-buy">Place Order</button>
+            <div id="cart-close">
+          <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+        </div>
+        </div>
+        
+      </section>
+    </header>
+
+    <!-- section 1 -->
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Online<span>education</span></h3>
+          <a href="#contact" class="btn">Contact us</a>
+        </div>
+        <div class="image">
+          <img src="images/Image edu.png.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section class="count">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+          <div class="content">
+            <h3><span data-count="150">0</span>+</h3>
+            <p>courses</p>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-user-graduate"></i>
+          <div class="content">
+            <h3><span data-count="1300">0</span>+</h3>
+            <p>students</p>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-chalkboard-user"></i>
+          <div class="content">
+            <h3><span data-count="80">0</span>+</h3>
+            <p>teachers</p>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-face-smile"></i>
+          <div class="content">
+            <h3><span data-count="100">0</span>%</h3>
+            <p>Satisfication</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 ends -->
+    <!-- section 3 starts about -->
+    <section class="about" id="about">
+      <div class="row">
+        <div class="image">
+          <img src="images/About.png.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h3>why choose us?</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            ratione fuga laboriosam odit, quam nesciunt! Dicta unde, vero
+            corporis sed culpa earum tempore nesciunt dolorum ad ipsa obcaecati
+            non, voluptatem, sunt dolor molestiae maiores quae cupiditate vel
+            quaerat cumque quas! Non dignissimos laboriosam nesciunt expedita
+            inventore pariatur reprehenderit saepe aut.
+          </p>
+          <a href="#contact" class="btn">contact us</a>
+        </div>
+      </div>
+    </section>
+    <!-- section 3 ends about -->
+
+    <!-- section 4 starts courses -->
+    <article class="">
+      <section class="courses" id="courses">
+        <h1 class="heading">our <span>courses</span></h1>
+        <div class="listProduct">
+          <div class="swiper course-slider">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide slide"
+                data-id="1"
+                data-name="web development"
+                data-price="200"
+              >
+                <img src="images/Course-1.png.jpg" alt="" class="course-image">
+                <h3 class="crs-title">web development</h3>
+                <p class="course-instructor">Amanda</p>
+                <p class="price">
+                  $200 
+                </p>
+                <button class="addcard">Add to Card</button>
+              
+              </div>
+
+              <div
+                class="swiper-slide slide"
+                data-id="2"
+                data-name="Digital marketing"
+                data-price="192"
+              >
+                <img src="images/Course-2.png.jpg" alt="" class="course-image">
+                <h3  class="crs-title">Digital marketing</h3>
+                <p class="course-instructor">Rohit</p>
+                <p class="price">
+                  $192 
+                </p>
+                <button class="addcard">Add to Card</button>
+              
+              </div>
+
+              <div
+                class="swiper-slide slide"
+                data-id="3"
+                data-name="Data scientist"
+                data-price="358"
+              >
+                <img src="images/Course-3.png.jpg" alt="" class="course-image">
+                <h3  class="crs-title">Data scientist</h3>
+                <p class="course-instructor">Kenji</p>
+                <p class="price">
+                  $358 
+                </p>
+                <button class="addcard">Add to Card</button>
+              
+              </div>
+
+              <div
+                class="swiper-slide slide"
+                data-id="4"
+                data-name="Graphic design"
+                data-price="214"
+              >
+                <img src="images/Course-4.png.jpg" alt="" class="course-image">
+                <h3  class="crs-title">Graphic design</h3>
+                <p class="course-instructor">Ashley</p>
+                <p class="price">
+                  $214 
+                </p>
+                <button class="addcard">Add to Card</button>
+              
+              </div>
+
+              <div
+                class="swiper-slide slide"
+                data-id="5"
+                data-name="Teaching"
+                data-price="251"
+              >
+                <img src="images/Course-5.png.jpg" alt="" class="course-image">
+                <h3  class="crs-title">Teaching</h3>
+                <p class="course-instructor">Shreya</p>
+                <p class="price">
+                  $251 
+                </p>
+                <button class="addcard">Add to Card</button>
+              
+              </div>
+
+              <div
+                class="swiper-slide slide"
+                data-id="6"
+                data-name="Engineering"
+                data-price="311"
+              >
+                <img src="images/Course-6.png.jpg" alt="" class="course-image">
+                <h3   class="crs-title">Engineering</h3>
+                <p class="course-instructor">Jessica</p>
+                <p class="price">
+                  $311 
+                </p>
+                <button class="addcard">Add to Card</button>
+              
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+       
+    <section class="teachers" id="teachers">
+      <h1 class="heading">expert<span>tutors</span></h1>
+      <div class="swiper teachers-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/tutor-1.jpg" alt="" />
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <h3>John deo</h3>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/tutor-2.jpg" alt="" />
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <h3>Sofia</h3>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/tutor-3.jpg" alt="" />
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <h3>Michael</h3>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/tutor-4.jpg" alt="" />
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <h3>Camila</h3>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/tutor-5.jpg" alt="" />
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <h3>David</h3>
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/tutor-6.jpg" alt="" />
+            <div class="share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <h3>William</h3>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- section 5 ends teachers -->
+    <!-- section 6 starts reviews -->
+    <section class="reviews" id="reviews">
+      <h1 class="heading">student's <span>reviews</span></h1>
+
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium repellendus ab debitis architecto quibusdam, sunt
+              nobis quis dolores qui in quisquam, placeat maiores fugiat
+              adipisci?
+            </p>
+            <div class="user">
+              <img src="images/pic-1.jpg" alt="" />
+              <div class="user-info">
+                <h3>Amanda</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium repellendus ab debitis architecto quibusdam, sunt
+              nobis quis dolores qui in quisquam, placeat maiores fugiat
+              adipisci?
+            </p>
+            <div class="user">
+              <img src="images/pic-2.jpg" alt="" />
+              <div class="user-info">
+                <h3>Rohit</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium repellendus ab debitis architecto quibusdam, sunt
+              nobis quis dolores qui in quisquam, placeat maiores fugiat
+              adipisci?
+            </p>
+            <div class="user">
+              <img src="images/pic-3.jpg" alt="" />
+              <div class="user-info">
+                <h3>Kenji</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium repellendus ab debitis architecto quibusdam, sunt
+              nobis quis dolores qui in quisquam, placeat maiores fugiat
+              adipisci?
+            </p>
+            <div class="user">
+              <img src="images/pic-4.jpg" alt="" />
+              <div class="user-info">
+                <h3>Ashley</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium repellendus ab debitis architecto quibusdam, sunt
+              nobis quis dolores qui in quisquam, placeat maiores fugiat
+              adipisci?
+            </p>
+            <div class="user">
+              <img src="images/pic-5.jpg" alt="" />
+              <div class="user-info">
+                <h3>Shreya</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Praesentium repellendus ab debitis architecto quibusdam, sunt
+              nobis quis dolores qui in quisquam, placeat maiores fugiat
+              adipisci?
+            </p>
+            <div class="user">
+              <img src="images/pic-6.jpg" alt="" />
+              <div class="user-info">
+                <h3>Jessica</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- section 6 starts reviews -->
+    <!-- section 7 starts contact -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span>us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/contact us.jpg" alt="" />
+        </div>
+
+        <form action="" method="post" onsubmit="sendemail(event)">
+          <span>your name</span>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="enter your fullname"
+            maxlength="50"
+            name="name"
+            class="box"
+          />
+          <span>your email</span>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="enter your valid email"
+            maxlength="50"
+            name="email"
+            class="box"
+          />
+          <span>your number</span>
+          <input
+            type="number"
+            id="number"
+            required
+            placeholder="enter your valid number"
+            max="9999999999"
+            min="0"
+            name="number"
+            class="box"
+            maxlength="10"
+            minlength="10"
+            onkeypress="if(this.value.lenth == 10) return false;"
+          />
+          <span>select course</span>
+          <select name="course" id="scourse" class="box" required>
+            <option value="" disabled selected>select the course---</option>
+            <option value="web development">web development</option>
+            <option value="data scientist">data scientist</option>
+            <option value="digital marketing">digital marketing</option>
+            <option value="grahic design">grahic design</option>
+            <option value="teaching">teaching</option>
+            <option value="engineering">engineering</option>
+          </select>
+          <span>select gender</span>
+          <div class="radio">
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">female</label>
+          </div>
+          <input
+            type="submit"
+            id="button"
+            value="send message"
+            name="send"
+            class="btn"
+          />
+        </form>
+      </div>
+    </section>
+
+    <!-- section 7 ends contact -->
+    <!-- section 8 starts footer -->
+    <div class="footer">
+      <section>
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-youtube"></a>
+        </div>
+
+        <div class="credit">
+          &copy; copyright @ 2024 by <span>Gowri sangar</span>
+        </div>
+      </section>
+    </div>
+    <div class="col-sm-3">p</div>
+    <div class="col-sm-3">p</div>
+    <!-- section 8 starts footer -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
